@@ -1,0 +1,151 @@
+* {
+    margin: 0;box-sizing: border-box;
+}
+.box {
+    background: #ececec;
+    width: 700px;
+    height: 700px;
+    margin: 50px auto;
+    border-radius: 50%;
+    border: 7px dashed black;
+    /* border-color: black; */
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+.clock{
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+    background: cadetblue;
+    border: 25px groove #777;
+    position: relative;
+    padding: 15px;
+}
+/* .clock::before{
+    content: '';
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border: 2px solid;
+    border-radius: 50%;
+} */
+span{
+    position: absolute;
+    font-size: 48px;
+    line-height: 1;
+}
+.clock-number-1{
+    left: 71%;
+    top: 50px;  
+}
+.clock-number-2{
+    left: 87%;
+    top: 140px;
+}
+.clock-number-3{
+    right: 15px;
+    top: calc(50% - 24px);
+}
+.clock-number-4{
+    left: 87%;
+    bottom: 140px;
+}
+.clock-number-5{
+    left: 71%;
+    bottom: 50px;
+}
+.clock-number-6{
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.clock-number-7{
+    left: 25%;
+    bottom: 50px;
+}
+.clock-number-8{
+    left: 9%;
+    bottom: 140px;
+}
+.clock-number-9{
+    left: 15px;
+    top: calc(50% - 24px);
+}
+.clock-number-10{
+    left: 8%;
+    top: 140px;
+}
+.clock-number-11{
+    left: 25%;
+    top: 50px;
+}
+.clock-number-12{
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.arrow {
+    position: absolute;
+    background: black;
+    width: 10px;
+    height: 210px;
+    top: 69px;
+    left: calc(50% - 5px);
+    animation: move 86400s linear infinite;
+    border-radius: 50%;
+}
+
+.arrow-2 {
+    position: absolute;
+    background: black;
+    width: 6px;
+    height: 260px;
+    top: calc(50%-3px);
+    left: calc(50% - 1px);
+    animation: arrow 60s linear infinite;
+    border-radius: 25%;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0);
+        transform-origin: 0 100% 0;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        transform-origin: 0 100% 0;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transform-origin: 0 100% 0;
+    }
+}
+
+@keyframes arrow {
+    0% {
+        transform: roate(0);
+        transform-origin: 0 100% 0;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        transform-origin: 0 100% 0;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transform-origin: 0 100% 0;
+    }
+}
